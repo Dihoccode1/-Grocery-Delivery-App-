@@ -1,7 +1,12 @@
 import React from "react";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <Toaster position="top-right" />
+    </>
+  );
 };
 
 export default App;
