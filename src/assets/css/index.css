@@ -57,6 +57,11 @@ input:focus {
     outline: none;
 }
 
+input::placeholder {
+    color: var(--color-app-text-light);
+    opacity: 1;
+}
+
 .flex-center {
     @apply flex items-center justify-center;
 }
