@@ -2,11 +2,10 @@ import React from "react";
 import { Toaster } from "react-hot-toast";
 import { Route, Routes } from "react-router-dom";
 
-import Login from "./pages/Login.jsx";
+import Login from "./pages/Login/Login.jsx";
 import AppLayout from "./pages/AppLayout.jsx";
 import Home from "./pages/Home.jsx";
 import Products from "./pages/Products.jsx";
-import Search from "./pages/Search.jsx";
 import ProductPages from "./pages/ProductPages.jsx";
 import Search from "./pages/Search.jsx";
 import FlashDeals from "./pages/FlashDeals.jsx";
@@ -14,7 +13,7 @@ import Checkout from "./pages/Checkout.jsx";
 import MyOrders from "./pages/MyOrders.jsx";
 import Addresses from "./pages/Addresses.jsx";
 
-import ProtectedRoutes from "./components/ProtectedRoutes.jsx";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
 const App = () => {
   return (
     <>
@@ -41,7 +40,7 @@ const App = () => {
           <Route path="/search" element={<Search />} />
           <Route path="/deals" element={<FlashDeals />} />
           {/* Protected Routes :OrderTracking, Address, Orders*/}
-          <Route element={<ProtectedRoutes />}>
+          <Route element={<ProtectedRoute />}>
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/orders" element={<MyOrders />} />
             <Route path="/orders/:id" element={<MyOrders />} />

@@ -96,7 +96,7 @@ export const footerData = {
     },
 };
 
-export const statusColors: Record<string, string> = {
+export const statusColors = {
     Placed: "bg-blue-100 text-blue-700",
     Confirmed: "bg-indigo-100 text-indigo-700",
     Packed: "bg-purple-100 text-purple-700",
